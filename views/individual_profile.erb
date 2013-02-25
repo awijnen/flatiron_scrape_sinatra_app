@@ -1,0 +1,27 @@
+<% if @student %>
+    <p>  
+      Student id: <%= @student.id %>
+    </p>
+
+    <p>  
+      Student name: <%= @student.name %>   
+    </p>    
+    
+    <p>  
+      Tagline: <%= @student.tagline %>   
+    </p>  
+    
+    <p>  
+      Short: <%= @student.short %>   
+    </p>  
+
+    <p>  
+      Aspirations: <%= @student.aspirations %>   
+    </p>  
+
+    <p>  
+      Interests: <%= @student.interests %>   
+    </p>  
+<% else %>
+    <p>Student not found.</p> 
+<% end %>
