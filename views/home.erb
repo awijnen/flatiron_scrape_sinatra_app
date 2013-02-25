@@ -1,8 +1,8 @@
 <% @students.each do |student| %>  
-  <article>  
+  <a href="/<%= student.id %>"><article>  
 
     <p>  
-      Student id: <%= student.id %>   
+      Student id: <%= student.id %>
     </p>
 
     <p>  
@@ -25,5 +25,5 @@
       Interests: <%= student.interests %>   
     </p>  
 
-  </article>
+  </article></a>   
 <% end %> 

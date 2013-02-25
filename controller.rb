@@ -84,3 +84,8 @@ get '/' do
   erb :home
 end
 
+get '/:id' do
+  @student = Student.get params[:id]
+  erb :individual_profile
+end
+
