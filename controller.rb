@@ -85,6 +85,7 @@ get '/' do
 end
 
 get '/:id' do
+  raise params.inspect
   @student = Student.get params[:id]
   erb :individual_profile
 end
